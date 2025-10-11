@@ -7,11 +7,13 @@
 
 import Foundation
 import SwiftUI
+import Factory
 
 struct WelcomeView: View {
     
     @State private var viewModel = WelcomeViewModel()
     @Binding var shouldShowWelcomeView: Bool
+    @Injected(\.appInfoStore) var appInfoStore
     var body: some View {
         VStack(spacing: 20) {
             title
