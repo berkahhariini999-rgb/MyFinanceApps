@@ -45,7 +45,7 @@ private extension WelcomeView {
             .font(.title3)
             .fontWeight(.medium)
             .multilineTextAlignment(.center)
-            .foregroundStyle(Color.gray)
+            .foregroundStyle(Color.appTheme.secondaryText)
     }
     
     var getStrtedButton: some View {
