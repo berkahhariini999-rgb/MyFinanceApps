@@ -9,12 +9,18 @@ import SwiftUI
 
 struct AppStartingView: View {
     
-    @StateObject var viewModel = AppStartingViewModel()
+    @StateObject private var viewModel = AppStartingViewModel()
+    
     
     var body: some View {
         Group {
-            
+            if viewModel.shouldShowWelcomeView {
+                WelcomeView(shouldShowWelcomeView: $viewModel.shouldShowWelcomeView)
+            } else {
+                HomeTabView()
+            }
         }
+        .animation(.easeIn, value: viewModel.shouldShowWelcomeView)
     }
 }
 
