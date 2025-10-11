@@ -6,3 +6,12 @@
 //
 
 import Foundation
+import Combine
+
+@MainActor
+final class AppStartingViewModel: ObservableObject {
+    //alert view
+    @Published var shouldShowWelcomeView:Bool = true
+    
+    
+}
