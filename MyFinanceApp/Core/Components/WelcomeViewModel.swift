@@ -12,7 +12,7 @@ import Combine
 final class WelcomeViewModel: ObservableObject {
     
     func getAppName() -> String {
-        "MyFinanceApp"
+        "My Finance"
     }
     
     
