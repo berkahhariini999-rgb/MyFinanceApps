@@ -16,6 +16,8 @@ struct SettingsView: View {
             VStack(spacing: 16){
               introBoxView
                 customizationBoxView
+                applicationBoxView
+                agreementsBoxView
             }
             .padding()
         }
@@ -43,8 +45,6 @@ private extension SettingsView {
     var agreementsBoxView: some View {
         InfoBoxView(with: viewModel.agreementsData)
     }
-    
-    
 }
 
 #Preview {
