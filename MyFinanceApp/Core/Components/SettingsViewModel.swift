@@ -41,4 +41,12 @@ final class SettingsViewModel: ObservableObject {
             ])
     }
     
+    func getAppName() -> String {
+        appInfoStore.name
+    }
+    
+    func getAppDescription() -> String {
+        appInfoStore.description
+    }
+    
 }
