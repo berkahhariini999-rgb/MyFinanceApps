@@ -9,7 +9,7 @@ import Foundation
 
 final class IncomeLiveStore: IncomeStore {
     func getSalaryOutput(for salaryInput: SalaryInput) -> SalaryOutput {
-        calculateSalaryOutput(for: <#T##SalaryInput#>)
+        calculateSalaryOutput(for: salaryInput)
     }
     
     func getHourlyOutput(for hourlyInput: HourlyInput) -> HourlyOutput {
