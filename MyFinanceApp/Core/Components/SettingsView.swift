@@ -12,7 +12,14 @@ struct SettingsView: View {
     @AppStorage(UserDefaultKeys.isDarkMode)
     private var isDarkMode = true
     var body: some View {
-        Text("Settings View")
+        ScrollView {
+            VStack(spacing: 16){
+                
+            }
+            .padding()
+        }
+        .infinityFrame()
+        .background(Color.gray.opacity(0.6))
     }
 }
 
