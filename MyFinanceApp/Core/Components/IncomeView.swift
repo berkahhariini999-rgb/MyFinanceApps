@@ -15,6 +15,7 @@ struct IncomeView: View {
         .toolbar {
             toolbarItems
         }
+        .hideKeyboardOnTapGesture()
         
     }
 }
