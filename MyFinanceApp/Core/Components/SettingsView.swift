@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct SettingsView: View {
+    @StateObject private var viewModel = SettingsViewModel()
+    @AppStorage(UserDefaultKeys.isDarkMode)
+    private var isDarkMode = true
     var body: some View {
         Text("Settings View")
     }
