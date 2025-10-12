@@ -36,7 +36,7 @@ private extension IncomeView {
             .padding(.vertical,8)
         }
         .infinityFrame()
-        .background(Color.appTheme.viewBackground)
+        .background(Color.gray.opacity(0.3))
         .animation(.easeIn, value: viewModel.incomePickerValue)
     }
     
