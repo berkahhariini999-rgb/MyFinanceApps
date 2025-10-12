@@ -36,6 +36,14 @@ private extension SettingsView {
         }
     }
     
+    var applicationBoxView: some View {
+        InfoBoxView(with: viewModel.applicationData)
+    }
+    
+    var agreementsBoxView: some View {
+        InfoBoxView(with: viewModel.agreementsData)
+    }
+    
     
 }
 
