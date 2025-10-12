@@ -28,7 +28,8 @@ private extension PayOutputRowView {
     var nameView: some View {
     Text(name)
             .font(.callout)
-            .foregroundStyle(Color.appTheme.secondaryText)
+            .foregroundStyle(Color.black)
+            .fontWeight(.bold)
     }
     var outputView: some View {
         Text("$ \(output.formattedAsWholeCurrencyOrInvalid)")
